@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@200;300;400;500&display=swap');
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./images/restaurant.jpg);
+    background-size: cover;
+}
+ 
+.wrapper{
+    background:#555;
+}
+
+.logo h1{
+    font-family: 'Permanent Marker', cursive;
+    color: #f5f5f5;
+    font-size: 2rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 5px 6px 20px rgba(11, 48, 255, 0.952);
+}
+
+.liens{
+    display: inline-flex;
+    color: #fff;
+}
+
+.liens .lien{
+    list-style: none;
+}
+
+.liens .lien a{
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.liens .lien a:hover{
+    background: rgb(103, 194, 247);
+    border-radius: 1rem;
+    transition: all 0.2s ease-in;
+    box-shadow: 5px 6px 20px rgba(11, 48, 255, 0.952);
+}
+
+/* Style pour menu deroulant */
+.sous-menu .liens{
+    position: absolute;
+    display: none;
+    background: #555;
+    width: 250px;
+    margin-left: 5px;
+    top:65px;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.sous-menu .liens .lien{
+    margin: 20px 0;
+}
+
+.lien-deroulant:hover .sous-menu .liens{
+    display: block;
+    top: 55px;
+}
+
+/* Style pour megamenu */
+
+.megamenu{
+    position: absolute;
+    background: #555;
+    width:80%;
+    top: 55px;
+    left: 15px;
+    padding: 20px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: none;
+}
+.lien-mega:hover .megamenu{
+    display: block;
+    transition: all 0.3s ease-in;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.colonne ul{
+    display: block;
+}
+
+.colonne ul li{
+    margin: 20px 0;
+}
+
+.colonne .logo{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 1rem;
+    border: solid 3px #fff
+}
+
+.colonne h2{
+    font-size: 1.2rem;
+}
